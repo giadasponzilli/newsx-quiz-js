@@ -18,6 +18,14 @@ h1 {
   font-family: 'Times New Roman', Times, serif;
   margin: 50px;
   font-size: 45px;
+}
 
+img {
+  width: 325;
+  height: 577px;
+}
+
+p {
+  text-align: justify;
 }
 
