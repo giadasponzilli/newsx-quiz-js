@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       colors: {
       'custom-color-purple': '#B4B1D4', // Define your custom color here
+      'custom-color-grey': '#585858',
     },
   },
   },

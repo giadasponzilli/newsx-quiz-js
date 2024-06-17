@@ -5,3 +5,19 @@
 #customNav {
   height: 80px;
 }
+
+#textNav {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#logoNewsX {
+  height: 60px;
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 50px;
+  font-size: 45px;
+
+}
+
