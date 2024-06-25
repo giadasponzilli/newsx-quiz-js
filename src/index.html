@@ -1,54 +1,113 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../build/output.css" rel="stylesheet">
 </head>
+
 <body>
   <nav class="bg-custom-color-purple" id="customNav">
-  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-    <div class="relative flex h-16 items-center justify-between">
-      
-      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-        <div class="m:ml-6 sm:block">
-          
-          <!-- Logo with link -->
-          <div class="flex space-x-4">
-            <a href="https://newsx.media/" class="rounded-md px-3 py-2 text-lg font-medium text-black" aria-current="page" id="textNav"><img id="logoNewsX" src="./assets/Logo-Large.png" alt="NewsX logo"></a>
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="m:ml-6 sm:block">
+
+            <!-- Logo with link -->
+            <div class="flex space-x-4">
+              <a href="https://newsx.media/" class="rounded-md px-3 py-2 text-lg font-medium text-black"
+                aria-current="page" id="textNav"><img id="logoNewsX" src="./assets/Logo-Large.png" alt="NewsX logo"></a>
+            </div>
+
           </div>
-
         </div>
-      </div>
-      <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
 
-        <div class="relative ml-3">
-          <div class="flex space-x-4">
-              <a href="https://newsx.media/blog/" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">NewsX Blog</a>
-              <a href="https://newsx.media/about/" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">About NewsX</a>              
+          <div class="relative ml-3">
+            <div class="flex space-x-4">
+              <a href="https://newsx.media/blog/"
+                class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+                aria-current="page">NewsX Blog</a>
+              <a href="https://newsx.media/about/"
+                class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+                aria-current="page">About NewsX</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-  <h1 class="font-bold text-center">
+  <!-- <h1 class="font-bold text-center">
     Guess the Headline
-  </h1>
+  </h1> -->
 
-  <h2 class="text-4xl font-bold text-center text-custom-color-grey">???</h2>
+  <!-- <h2 class="text-4xl font-bold text-center text-custom-color-grey">???</h2>
 
   <div class="articleContainer flex items-center justify-center p-40">
-    <img src="./assets/Newsflash-AgaToad-01.jpg" alt="big toad" >
-    <p class="p-8">This is the moment a massive cane toad struggles to fit on the scales as    Russian zoo keepers try to check out its weight.
-      The giant toad seems unconcerned as the keepers poke and prod it to spread its considerable bulk evenly over the weighing machine at Moscow Zoo, in Russia.
-      The reptile experts were careful to keep their surgical gloves on, as the toad secretes a toxic milky fluid called bufotoxin from glands on its skin that can cause serious illness in humans.
-      The footage from 22nd May shows the female toad Nastyukha tipping the scales at a whopping weight of nearly 1.5 kilogrammes (3.3 lbs).
+    <img src="./assets/Newsflash-AgaToad-01.jpg" alt="big toad">
+    <p class="p-8">This is the moment a massive cane toad struggles to fit on the scales as Russian zoo keepers try to
+      check out its weight.
+      The giant toad seems unconcerned as the keepers poke and prod it to spread its considerable bulk evenly over the
+      weighing machine at Moscow Zoo, in Russia.
+      The reptile experts were careful to keep their surgical gloves on, as the toad secretes a toxic milky fluid called
+      bufotoxin from glands on its skin that can cause serious illness in humans.
+      The footage from 22nd May shows the female toad Nastyukha tipping the scales at a whopping weight of nearly 1.5
+      kilogrammes (3.3 lbs).
       <br>Article by Georgina Jedikovska</br>
     </p>
-    
+
   </div>
-  
+
+  <div class="flex justify-center">
+    <button class="bg-custom-color-purple text-white font-bold p-10 m-10 rounded">
+      Reveal Headline
+    </button>
+  </div> -->
+
+
+
+  <div class="py-16 bg-gradient-to-br from-green-50 to-cyan-100">
+    <div class="container m-auto px-6 md:px-12 xl:px-6">
+      <div class="mb-12 space-y-2 text-center">
+        <h1 class="text-center font-bold md:text-6xl">Guess the Headline</h1>
+      </div>
+
+      <div class="p-1 rounded-xl bg-white bg-opacity-50 shadow-xl hover:rounded-2xl">
+
+        <h2 class="flex justify-center text-4xl m-10">???</h2>
+
+        <div class="flex justify-center space-x-6 m-4">
+          <img src="./assets/Newsflash-AgaToad-01.jpg" alt="big toad" width="1000" height="667"
+            class="h-56 sm:h-full w-full sm:w-3/12 object-cover object-top rounded-lg transition duration-500 group-hover:rounded-xl">
+          <div class="sm:w-7/12 pl-0 p-5 flex flex-col justify-between">
+            <div class="space-y-2">
+                  <p class="p-8">This is the moment a massive cane toad struggles to fit on the scales as Russian zoo
+                    keepers try to check out its weight.
+                    The giant toad seems unconcerned as the keepers poke and prod it to spread its considerable bulk
+                    evenly over the weighing machine at Moscow Zoo, in Russia.
+                    The reptile experts were careful to keep their surgical gloves on, as the toad secretes a toxic
+                    milky fluid called bufotoxin from glands on its skin that can cause serious illness in humans.
+                    The footage from 22nd May shows the female toad Nastyukha tipping the scales at a whopping weight of
+                    nearly 1.5 kilogrammes (3.3 lbs).
+                  <p class="p-8 font-bold">Article by Georgina Jedikovska</p>
+                  </p>
+                </div>
+                <div class="flex justify-center mt-auto">
+                  <button class="bg-custom-color-purple text-white font-bold p-8 m-8 rounded">
+                    Reveal Headline
+                  </button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 </body>
+
 </html>
