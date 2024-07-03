@@ -20,9 +20,37 @@ document.addEventListener("DOMContentLoaded", ()=> {
 })
 
 
-// the function should say healine displaying ??? now should be replaced with the real headline which was hide.
+// The function should say headline displaying ??? now should be replaced with the real headline which was hide.
+const headlineText = document.getElementById("headline")
+const revealHeadlineButton = document.getElementById("revealHeadline")
 
-// the button reveal headline should wait for an event listener
+let headlineVisible = false; // Track the visibility state of the headline
+
+function revealHeadline() {
+
+  if (!headlineVisible) {
+  headlineText.textContent = "CANE MU-TON-Y:"
+  const subHeading = document.createElement("h3")
+  subHeading.textContent = "MASSIVE CANE TOAD HAS WEIGH TO GO"
+  subHeading.classList.add("flex", "justify-center", "text-2xl", "m-10");
+  headlineText.insertAdjacentElement("afterend", subHeading);
+  revealHeadlineButton.textContent = "Hide Headline"
+  headlineVisible = true; // Update visibility state
+  } else {
+    // Hide the headline
+    headlineText.textContent = "???";
+    const subHeading = document.querySelector("h3");
+    if (subHeading) {
+      subHeading.remove();
+    }
+    revealHeadlineButton.textContent = "Reveal Headline";
+    headlineVisible = false; // Update visibility state
+  }
+}
+
+// The button reveal headline should wait for an event listener
+revealHeadlineButton.addEventListener("click", revealHeadline)
+
 
 // when the page is opened the first card created is the last json file
 // we need a function that dynamically creates a card with all the info of the article.
