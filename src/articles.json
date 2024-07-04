@@ -140,9 +140,11 @@
   },
   {
     "id": 20,
-    "headline": "",
-    "image": "",
-    "content": "",
-    "author": ""
+    "headline": "CANE MU-TON-Y:",
+    "subheading": "MASSIVE CANE TOAD HAS WEIGH TO GO",
+    "altTextImg": "big toad",
+    "image": "./assets/articles-pictures/Newsflash-AgaToad-01.jpg",
+    "content": "This is the moment a massive cane toad struggles to fit on the scales as Russian zoo keepers try to check out its weight.\nThe giant toad seems unconcerned as the keepers poke and prod it to spread its considerable bulk evenly over the weighing machine at Moscow Zoo, in Russia.\nThe reptile experts were careful to keep their surgical gloves on, as the toad secretes a toxic milky fluid called bufotoxin from glands on its skin that can cause serious illness in humans.\nThe footage from 22nd May shows the female toad Nastyukha tipping the scales at a whopping weight of nearly 1.5 kilogrammes (3.3 lbs).",
+    "author": "Article by Georgina Jedikovska"
   }
 ]
