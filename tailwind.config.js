@@ -7,6 +7,15 @@ module.exports = {
       colors: {
       'custom-color-purple': '#B4B1D4', // Define your custom color here
       'custom-color-grey': '#585858',
+      'custom-color-purple-hover': '#645BC1',
+    },
+    fontFamily: {
+      serif: ['Times New Roman', 'Times', 'serif'],
+    },
+  },
+  variants: {
+    extend: {
+      backgroundColor: ['hover'],
     },
   },
   },

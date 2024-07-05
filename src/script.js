@@ -19,11 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         img.src = article.image
         img.alt = article.title;
         img.dataset.id = article.id;
-        img.style.width = 'auto';
-        img.style.height = '100px';
-        img.style.margin = '100px 10px 50px 10px';
-        img.classList.add('rounded', 'shadow-md');
-        // img.classList.add('w-auto', 'h-24', 'm-4', 'rounded', 'shadow-md');
+        img.classList.add('w-auto', 'h-24', 'mt-12','rounded', 'shadow-md');
 
         //Add event listener for each image, so that when an image is clicked the previous card disappear and the one which has been clicked will be shown.
         img.addEventListener("click", () => updateCard(article));
@@ -43,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const imgCard = document.createElement("img");
     imgCard.src = article.image;
     imgCard.alt = article.altTextImg;
-    imgCard.classList.add('rounded-lg');
+    imgCard.classList.add('rounded-lg', 'shadow-md');
     imgCardDiv.appendChild(imgCard);
 
     //Update Text Card
@@ -51,12 +47,11 @@ document.addEventListener("DOMContentLoaded", () => {
     textContainer.innerHTML = "";
     const pTextCard = document.createElement("p");
     pTextCard.textContent = article.content;
-    pTextCard.classList.add('p-8');
+    pTextCard.classList.add('p-8', 'text-xl');
     textContainer.appendChild(pTextCard);
     const pAuthorTextCard = document.createElement("p");
     pAuthorTextCard.textContent = article.author
-    pAuthorTextCard.classList.add('font-bold');
-    pAuthorTextCard.style.paddingTop = '2rem';
+    pAuthorTextCard.classList.add('font-bold', 'pt-8');
     pTextCard.appendChild(pAuthorTextCard);
 
     //Update headline text and remove subheading if it exists
@@ -85,6 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!headlineVisible) {
       headlineText.textContent = currentArticle.headline;
+      headlineText.classList.add('text-gray-900')
       const subHeading = document.createElement("h3")
       subHeading.textContent = currentArticle.subheading;
       subHeading.classList.add("flex", "justify-center", "text-2xl", "m-10");
@@ -112,10 +108,9 @@ document.addEventListener("DOMContentLoaded", () => {
   //// when the page is opened the first card created is the last json file
   //// we need a function that dynamically updates the card info with all the info of the article.
   //// add event listener of images, when images are clicked the previous function executes and the previous card disappear.
-  // Make the headline reveal reusable
-  // Hover on navBar button and reveal headline button
-
-  // Add arrows to go to next article
+  //// Make the headline reveal reusable
   ////the images should be displayed in reverse json file order
+  //// Hover on navBar button and reveal headline button
+  // Add arrows to go to next article
 
 
