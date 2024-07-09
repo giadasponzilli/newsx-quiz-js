@@ -12,7 +12,7 @@
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
 
-        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start mt-6">
           <div class="m:ml-6 sm:block">
 
             <!-- Logo with link -->
@@ -23,7 +23,7 @@
 
           </div>
         </div>
-        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 mt-6">
 
           <div class="relative ml-3">
             <div class="flex space-x-4">
@@ -60,7 +60,8 @@
             <div class="space-y-2" id="textContainer">
             </div>
             <div class="flex justify-center mt-auto">
-              <button id="revealHeadline" class="bg-gray-900 text-white font-serif font-bold text-xl p-8 m-8 rounded hover:bg-custom-color-purple-hover">
+              <button id="revealHeadline"
+                class="bg-gray-900 text-white font-serif font-bold text-xl p-8 m-8 rounded hover:bg-custom-color-purple-hover">
                 Reveal Headline
               </button>
             </div>
@@ -70,19 +71,21 @@
     </div>
 
     <div class="flex justify-center space-x-4">
-      <button class="text-4xl bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-custom-color-purple-hover" id="buttonArrowLeft">
+      <button class="text-4xl bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-custom-color-purple-hover"
+        id="buttonArrowLeft">
         &larr; <!-- Left Arrow -->
       </button>
-      <button class="text-4xl bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-custom-color-purple-hover" id="buttonArrowRight">
+      <button class="text-4xl bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-custom-color-purple-hover"
+        id="buttonArrowRight">
         &rarr; <!-- Right Arrow -->
       </button>
     </div>
-
-    <div id="imagesContainer" class="flex flex-wrap gap-4 mx-12 px-12 mb-12">
-
+    <div class="flex justify-center mx-12 mt-16">
+      <h4 class="text-4xl font-serif font-bold text-gray-800 mx-10 mt-10">Try to guess an other Headline!</h4>
     </div>
-
-  </div>
+    <div id="imagesContainer" class="flex flex-wrap gap-4 mx-32 px-12 mb-12">
+    </div>
+  
   </div>
 
   <script src="./script.js"></script>

@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
   ////the images should be displayed in reverse json file order
   //// Hover on navBar button and reveal headline button
   //// Add arrows to go to next article
-  // I need a picture of arrows then i need to add an event listener to them.
-  // the function should go to next json article or go to previous json article. which will mean add +1 to the id.
+  //// I need a picture of arrows then i need to add an event listener to them.
+  //// the function should go to next json article or go to previous json article. which will mean add +1 to the id.
 
   // Add title explore try more articles

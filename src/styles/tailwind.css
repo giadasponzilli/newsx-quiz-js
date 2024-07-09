@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 #customNav {
-  height: 80px;
+  height: 100px;
 }
 
 #textNav {
@@ -26,4 +26,6 @@ img {
 p {
   text-align: justify;
 }
+
+
 
