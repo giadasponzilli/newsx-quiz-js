@@ -1,20 +1,28 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  let currentArticle = null; // Variable to store the currently displayed article
+  // Variable to store the currently displayed article
+  let currentArticle = null; 
+  // Variable to store the index of the currently displayed article
+  let currentArticleIndex = 0; 
+  // Variable to store the articles data
+  let articles = []; 
 
   fetch("./articles.json")
     .then(response => response.json())
     .then(data => {
+      articles = data;
+      console.log(articles);
+      
 
       const imagesContainer = document.getElementById("imagesContainer");
 
       //Generate first CardGuessTheHeadline when page is open
 
-      const lastArticle = data[data.length - 1];
+      const lastArticle = articles[articles.length - 1];
       updateCard(lastArticle)
 
       // Iterate through each element in the json file and print a small image on the page as a menu
-      data.reverse().forEach(article => {
+      articles.reverse().forEach((article, index) => {
         const img = document.createElement("img");
         img.src = article.image
         img.alt = article.title;
@@ -22,7 +30,10 @@ document.addEventListener("DOMContentLoaded", () => {
         img.classList.add('w-auto', 'h-24', 'mt-12','rounded', 'shadow-md');
 
         //Add event listener for each image, so that when an image is clicked the previous card disappear and the one which has been clicked will be shown.
-        img.addEventListener("click", () => updateCard(article));
+        img.addEventListener("click", () => { 
+          currentArticleIndex = index;
+          updateCard(article);
+        });
         imagesContainer.appendChild(img)
 
       });
@@ -102,6 +113,35 @@ document.addEventListener("DOMContentLoaded", () => {
   // The button reveal headline should wait for an event listener
   revealHeadlineButton.addEventListener("click", revealHeadline)
 
+
+  // Navigation with arrow to next article
+  function nextArticle() {
+    if (currentArticleIndex < articles.length - 1) {
+      currentArticleIndex++;
+    } else {
+      // Loop back to the first article
+      currentArticleIndex = 0;
+    }
+    updateCard(articles[currentArticleIndex]);
+  }
+
+  // Navigation with arrow to previous article
+  function previousArticle() {
+    if (currentArticleIndex > 0) {
+      currentArticleIndex--;
+    } else {
+      // Loop back to the last article
+      currentArticleIndex = articles.length - 1;
+    }
+    updateCard(articles[currentArticleIndex]);
+  }
+
+  const buttonArrowRight = document.getElementById("buttonArrowRight");
+  buttonArrowRight.addEventListener("click", nextArticle)
+
+  const buttonArrowLeft = document.getElementById("buttonArrowLeft");
+  buttonArrowLeft.addEventListener("click", previousArticle)
+
 });
 
 
@@ -111,6 +151,8 @@ document.addEventListener("DOMContentLoaded", () => {
   //// Make the headline reveal reusable
   ////the images should be displayed in reverse json file order
   //// Hover on navBar button and reveal headline button
-  // Add arrows to go to next article
+  //// Add arrows to go to next article
+  // I need a picture of arrows then i need to add an event listener to them.
+  // the function should go to next json article or go to previous json article. which will mean add +1 to the id.
 
-
+  // Add title explore try more articles
