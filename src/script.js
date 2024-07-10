@@ -145,6 +145,45 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
+
+
+
+// Social Media Buttons
+function shareOnFacebook() {
+  const url = window.location.href;
+  const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+  window.open(shareUrl, '_blank', 'width=600,height=400');
+}
+
+function shareOnTwitter() {
+  const url = window.location.href;
+  const text = document.title; // Use the page title as the text
+  const shareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`;
+  window.open(shareUrl, '_blank', 'width=600,height=400');
+}
+
+function shareOnLinkedIn() {
+  const url = window.location.href;
+  const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
+  window.open(shareUrl, '_blank', 'width=600,height=400');
+}
+
+function shareOnPinterest() {
+  const url = window.location.href;
+  const description = document.title; // Use the page title as the description
+  const image = document.querySelector('meta[property="og:image"]').getAttribute('content'); // Get the image URL from the meta tag
+  const shareUrl = `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(url)}&media=${encodeURIComponent(image)}&description=${encodeURIComponent(description)}`;
+  window.open(shareUrl, '_blank', 'width=600,height=400');
+}
+
+function shareByEmail() {
+  const subject = document.title; // Use the page title as the subject
+  const body = `Check out this link: ${window.location.href}`;
+  const mailtoUrl = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  window.location.href = mailtoUrl;
+}
+
   //// when the page is opened the first card created is the last json file
   //// we need a function that dynamically updates the card info with all the info of the article.
   //// add event listener of images, when images are clicked the previous function executes and the previous card disappear.
@@ -155,4 +194,8 @@ document.addEventListener("DOMContentLoaded", () => {
   //// I need a picture of arrows then i need to add an event listener to them.
   //// the function should go to next json article or go to previous json article. which will mean add +1 to the id.
 
-  // Add title explore try more articles
+  //// Add title explore try more articles
+
+  //social media buttons
+  //card with possibility to send email to buy an headline
+  //footer
