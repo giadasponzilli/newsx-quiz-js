@@ -27,5 +27,9 @@ p {
   text-align: justify;
 }
 
+#formContainer {
+  margin-left: 40rem;
+  margin-right: 40rem;
+}
 
 
