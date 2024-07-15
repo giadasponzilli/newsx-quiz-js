@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //Update headline text and remove subheading if it exists
     headlineText.textContent = "???"
-    const existingSubHeading = document.querySelector("h3")
+    const existingSubHeading = document.getElementById("subHeading")
     if (existingSubHeading) {
       existingSubHeading.remove()
     }
@@ -94,14 +94,15 @@ document.addEventListener("DOMContentLoaded", () => {
       headlineText.classList.add('text-gray-900')
       const subHeading = document.createElement("h3")
       subHeading.textContent = currentArticle.subheading;
-      subHeading.classList.add("flex", "justify-center", "text-2xl", "m-10");
+      subHeading.classList.add("flex", "justify-center", "text-2xl", "m-10", "font-serif");
+      subHeading.id = "subHeading";
       headlineText.insertAdjacentElement("afterend", subHeading);
       revealHeadlineButton.textContent = "Hide Headline"
       headlineVisible = true; // Update visibility state
     } else {
       // Hide the headline
       headlineText.textContent = "???";
-      const subHeading = document.querySelector("h3");
+      const subHeading = document.getElementById("subHeading");
       if (subHeading) {
         subHeading.remove();
       }
@@ -184,18 +185,16 @@ function shareByEmail() {
   window.location.href = mailtoUrl;
 }
 
-  //// when the page is opened the first card created is the last json file
-  //// we need a function that dynamically updates the card info with all the info of the article.
-  //// add event listener of images, when images are clicked the previous function executes and the previous card disappear.
-  //// Make the headline reveal reusable
-  ////the images should be displayed in reverse json file order
-  //// Hover on navBar button and reveal headline button
-  //// Add arrows to go to next article
-  //// I need a picture of arrows then i need to add an event listener to them.
-  //// the function should go to next json article or go to previous json article. which will mean add +1 to the id.
 
-  //// Add title explore try more articles
 
-  //social media buttons
-  //card with possibility to send email to buy an headline
-  //footer
+
+  //social media buttons make sure they work
+  ////card with possibility to send email to buy an headline
+  //connect form to email JS
+  //make sure h3 can be visible on the page (problem in javascript)
+  //Add footer
+  //Style the navBar buttons in a different way
+
+  //Adjust all articles and pictures
+  //make sure it is responsive
+  //Search AI
