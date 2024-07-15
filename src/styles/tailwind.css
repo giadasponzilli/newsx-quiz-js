@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 #customNav {
-  height: 100px;
+  height: 130px;
 }
 
 #textNav {
@@ -11,7 +11,7 @@
 }
 
 #logoNewsX {
-  height: 60px;
+  height: 100px;
 }
 
 h1 {
