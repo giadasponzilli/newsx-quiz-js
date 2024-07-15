@@ -191,9 +191,9 @@ function shareByEmail() {
   //social media buttons make sure they work
   ////card with possibility to send email to buy an headline
   //connect form to email JS
-  //make sure h3 can be visible on the page (problem in javascript)
+  ////make sure h3 can be visible on the page (problem in javascript)
   //Add footer
-  //Style the navBar buttons in a different way
+  ////Style the navBar buttons in a different way
 
   //Adjust all articles and pictures
   //make sure it is responsive

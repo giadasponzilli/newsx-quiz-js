@@ -928,6 +928,14 @@ select {
   margin-top: auto;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .block {
   display: block;
 }
@@ -1047,6 +1055,10 @@ select {
   gap: 1rem;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
 .gap-x-4 {
   -moz-column-gap: 1rem;
        column-gap: 1rem;
@@ -1109,6 +1121,38 @@ select {
   border-width: 0px;
 }
 
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.border-b-4 {
+  border-bottom-width: 4px;
+}
+
+.border-t {
+  border-top-width: 1px;
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-gray-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(17 24 39 / var(--tw-border-opacity));
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.border-gray-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
+}
+
 .bg-custom-color-purple {
   --tw-bg-opacity: 1;
   background-color: rgb(180 177 212 / var(--tw-bg-opacity));
@@ -1132,6 +1176,11 @@ select {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
@@ -1231,6 +1280,11 @@ select {
   padding-bottom: 0.625rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .pl-0 {
   padding-left: 0px;
 }
@@ -1241,6 +1295,10 @@ select {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-center {
@@ -1441,9 +1499,24 @@ p {
   border-radius: 1rem;
 }
 
+.hover\:border-custom-color-purple-hover:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(100 91 193 / var(--tw-border-opacity));
+}
+
 .hover\:bg-custom-color-purple-hover:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(100 91 193 / var(--tw-bg-opacity));
+}
+
+.hover\:text-custom-color-purple-hover:hover {
+  --tw-text-opacity: 1;
+  color: rgb(100 91 193 / var(--tw-text-opacity));
+}
+
+.hover\:text-gray-400:hover {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .focus\:ring-2:focus {
@@ -1566,6 +1639,10 @@ p {
   .md\:mx-14 {
     margin-left: 3.5rem;
     margin-right: 3.5rem;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:px-12 {
