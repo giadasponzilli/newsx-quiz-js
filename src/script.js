@@ -99,6 +99,12 @@ document.addEventListener("DOMContentLoaded", () => {
       headlineText.insertAdjacentElement("afterend", subHeading);
       revealHeadlineButton.textContent = "Hide Headline"
       headlineVisible = true; // Update visibility state
+
+       // Scroll to the headline only on small screens
+      if (window.innerWidth < 1024) {
+        headlineText.scrollIntoView({ behavior: 'smooth' });
+      }
+
     } else {
       // Hide the headline
       headlineText.textContent = "???";
@@ -198,13 +204,13 @@ document.addEventListener("DOMContentLoaded", function() {
   ////Make sure h3 can be visible on the page (problem in javascript)
   ////Add footer
   ////Style the navBar buttons in a different way
-  //social media buttons make sure they work
+  //Social media buttons make sure they work
   //Connect form to email JS - need email from newsX
   ////Hamburger menu for responsive app
 
-  // Follow Us icons on footer
+  ////Follow Us icons on footer
   //When reveal headline is press scroll to title
-  //privacy policy form
+  //Privacy policy form make the button work
   //Adjust all articles and pictures
   //Make sure it is responsive
   //Search AI
