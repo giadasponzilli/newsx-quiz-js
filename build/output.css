@@ -1575,6 +1575,16 @@ p {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:text-custom-color-purple:hover {
+  --tw-text-opacity: 1;
+  color: rgb(180 177 212 / var(--tw-text-opacity));
+}
+
+.hover\:text-custom-color-purple-gradient:hover {
+  --tw-text-opacity: 1;
+  color: rgb(146 59 153 / var(--tw-text-opacity));
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
