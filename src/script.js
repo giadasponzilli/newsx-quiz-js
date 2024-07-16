@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
        // Scroll to the headline only on small screens
       if (window.innerWidth < 1024) {
-        headlineText.scrollIntoView({ behavior: 'smooth' });
+        headlineText.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
 
     } else {
