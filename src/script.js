@@ -186,15 +186,25 @@ function shareByEmail() {
 }
 
 
+document.addEventListener("DOMContentLoaded", function() {
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
 
+  hamburger.addEventListener("click", function() {
+    navLinks.classList.toggle("hidden");
+  });
+});
 
-  //social media buttons make sure they work
-  ////card with possibility to send email to buy an headline
-  //connect form to email JS
-  ////make sure h3 can be visible on the page (problem in javascript)
-  //Add footer
+  ////Make sure h3 can be visible on the page (problem in javascript)
+  ////Add footer
   ////Style the navBar buttons in a different way
+  //social media buttons make sure they work
+  //Connect form to email JS - need email from newsX
+  ////Hamburger menu for responsive app
 
+  // Follow Us icons on footer
+  //When reveal headline is press scroll to title
+  //privacy policy form
   //Adjust all articles and pictures
-  //make sure it is responsive
+  //Make sure it is responsive
   //Search AI

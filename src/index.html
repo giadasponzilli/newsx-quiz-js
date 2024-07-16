@@ -30,7 +30,7 @@
         </div>
         <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 mt-6">
 
-          <div class="relative ml-3">
+          <div class="hidden md:block relative ml-3">
             <div class="flex space-x-4">
               <a href="https://newsx.media/blog/"
                 class="block px-3 py-2 text-xl font-medium text-gray-900 hover:text-custom-color-purple-hover hover:border-custom-color-purple-hover border-b-4 border-black"
@@ -40,10 +40,26 @@
                 aria-current="page">ABOUT</a>
             </div>
           </div>
+
+          <!-- Hamburger menu button -->
+      <div class="relative block md:hidden">
+        <button id="hamburger" class="text-black focus:outline-none">
+          <svg class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M3 5h14a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2zm0 6h14a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2zm0 6h14a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2z" clip-rule="evenodd" />
+          </svg>
+        </button>
+      </div>
+      <!-- Navigation links -->
+      <div class="absolute right-0 mt-56 w-48 md:hidden hidden bg-custom-color-purple bg-opacity-70 md:items-center md:w-auto rounded" id="nav-links">
+        <a href="https://newsx.media/about/" class="block text-gray-900 hover:text-custom-color-purple-hover px-3 py-2 rounded">ABOUT</a>
+        <a href="https://newsx.media/blog/" class="block text-gray-900 hover:text-custom-color-purple-hover px-3 py-2 rounded">NEWSX BLOG</a>
+      </div> 
         </div>
       </div>
     </div>
   </nav>
+    
+
 
   <!-- Title of the page -->
   <div class="py-16 bg-gradient-to-br from-green-50 to-cyan-100">
@@ -175,9 +191,9 @@
                     class="h-4 w-4 translate-x-0 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out"></span>
                 </button>
               </div>
-              <label class="text-lg leading-6 text-gray-600" id="switch-1-label">
+              <label class="text-lg leading-6 text-gray-800" id="switch-1-label">
                 By selecting this, you agree to our
-                <a href="#" class="font-semibold text-indigo-600">privacy&nbsp;policy</a>.
+                <a href="https://newsx.media/privacy-policy/" class="font-semibold hover:text-white">privacy&nbsp;policy</a>.
               </label>
             </div>
           </div>
@@ -198,20 +214,21 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         <div>
-          <h3 class="text-xl font-semibold mb-2">About Us</h3>
+          <h3 class="text-xl font-semibold mb-2">Follow Us</h3>
           <p class="text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
             ut labore et dolore magna aliqua.</p>
         </div>
         <div>
           <h3 class="text-xl font-semibold mb-2">Useful Links</h3>
           <ul class="text-md">
-            <li><a href="https://newsx.media/about/" class="hover:text-custom-color-purple-hover">About</a></li>
+            <li><a href="https://newsx.media/about/" class="hover:text-custom-color-purple-hover">About Us</a></li>
             <li><a href="https://newsx.media/blog/" class="hover:text-custom-color-purple-hover">NewsX Blog</a></li>
+            <li><a href="https://newsx.media/privacy-policy/" class="hover:text-custom-color-purple-hover">Privacy Policy</a></li>
           </ul>
         </div>
         <div>
           <h3 class="text-xl font-semibold mb-2">Contact Us</h3>
-          <p class="text-md">Email: info@example.com</p>
+          <a href="mailto:info@example.com" class="hover:text-custom-color-purple-hover text-md">Email: info@example.com</a>
         </div>
       </div>
       <div class="mt-8 border-t border-gray-600 pt-4 text-md text-center">
