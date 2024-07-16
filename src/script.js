@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
+  
+  //When hamburger icon is clicked navlinks show up
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+  
+  hamburger.addEventListener("click", function() {
+    navLinks.classList.toggle("hidden");
+  });
 
   // Variable to store the currently displayed article
   let currentArticle = null; 
@@ -192,14 +200,14 @@ function shareByEmail() {
 }
 
 
-document.addEventListener("DOMContentLoaded", function() {
-  const hamburger = document.getElementById("hamburger");
-  const navLinks = document.getElementById("nav-links");
+// document.addEventListener("DOMContentLoaded", function() {
+//   const hamburger = document.getElementById("hamburger");
+//   const navLinks = document.getElementById("nav-links");
 
-  hamburger.addEventListener("click", function() {
-    navLinks.classList.toggle("hidden");
-  });
-});
+//   hamburger.addEventListener("click", function() {
+//     navLinks.classList.toggle("hidden");
+//   });
+// });
 
   ////Make sure h3 can be visible on the page (problem in javascript)
   ////Add footer
@@ -209,7 +217,7 @@ document.addEventListener("DOMContentLoaded", function() {
   ////Hamburger menu for responsive app
 
   ////Follow Us icons on footer
-  //When reveal headline is press scroll to title
+  ////When reveal headline is press scroll to title
   //Privacy policy form make the button work
   //Adjust all articles and pictures
   //Make sure it is responsive
