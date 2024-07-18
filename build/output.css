@@ -946,6 +946,10 @@ select {
   height: 2rem;
 }
 
+.max-h-24 {
+  max-height: 6rem;
+}
+
 .w-4 {
   width: 1rem;
 }
@@ -1077,6 +1081,16 @@ select {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .rounded {
@@ -1627,5 +1641,6 @@ p {
     padding-right: 1.5rem;
   }
 }
+
 
 

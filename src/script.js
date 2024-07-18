@@ -48,7 +48,14 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch(error => console.error('Error fetching articles:', error));
 
-
+  // Function to truncate content
+  function truncateContent(content, maxLength) {
+    if (content.length <= maxLength) return content;
+    let truncated = content.substr(0, maxLength);
+    // Ensure we don't cut off a word
+    truncated = truncated.substr(0, Math.min(truncated.length, truncated.lastIndexOf(" ")));
+    return truncated + '...';
+  }
 
   // Function that dynamically updates the card info with all the info of the article
   function updateCard(article) {
@@ -64,14 +71,31 @@ document.addEventListener("DOMContentLoaded", () => {
     //Update Text Card
     const textContainer = document.getElementById("textContainer");
     textContainer.innerHTML = "";
+
+    const maxLength = 1000; // Character limit
+    const truncatedContent = truncateContent(article.content, maxLength);
+
     const pTextCard = document.createElement("p");
-    pTextCard.textContent = article.content;
+    pTextCard.textContent = truncatedContent;
     pTextCard.classList.add('p-8', 'text-xl');
     textContainer.appendChild(pTextCard);
+
+    // Add read more button
+    const readMoreButton = document.createElement("button");
+    readMoreButton.textContent = "Read More";
+    readMoreButton.classList.add('read-more', 'font-bold', 'hover:text-custom-color-purple-hover');
+    pTextCard.appendChild(readMoreButton);
+
+    // Event listener for read more button
+    readMoreButton.addEventListener("click", () => {
+        pTextCard.textContent = article.content;  
+    });
+
     const pAuthorTextCard = document.createElement("p");
     pAuthorTextCard.textContent = article.author
-    pAuthorTextCard.classList.add('font-bold', 'pt-8');
-    pTextCard.appendChild(pAuthorTextCard);
+    pAuthorTextCard.classList.add('font-bold', 'p-8', 'text-xl');
+    textContainer.appendChild(pAuthorTextCard);
+
 
     //Update headline text and remove subheading if it exists
     headlineText.textContent = "???"
@@ -200,14 +224,6 @@ function shareByEmail() {
 }
 
 
-// document.addEventListener("DOMContentLoaded", function() {
-//   const hamburger = document.getElementById("hamburger");
-//   const navLinks = document.getElementById("nav-links");
-
-//   hamburger.addEventListener("click", function() {
-//     navLinks.classList.toggle("hidden");
-//   });
-// });
 
   ////Make sure h3 can be visible on the page (problem in javascript)
   ////Add footer
@@ -222,3 +238,4 @@ function shareByEmail() {
   //Adjust all articles and pictures
   //Make sure it is responsive
   //Search AI
+  //Deploy app
