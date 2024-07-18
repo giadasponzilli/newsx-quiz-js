@@ -36,13 +36,14 @@ document.addEventListener("DOMContentLoaded", () => {
         img.alt = article.title;
         img.dataset.id = article.id;
         img.classList.add('w-auto', 'h-24', 'mt-12','rounded', 'shadow-md');
+        imagesContainer.appendChild(img)
 
         //Add event listener for each image, so that when an image is clicked the previous card disappear and the one which has been clicked will be shown.
         img.addEventListener("click", () => { 
           currentArticleIndex = index;
           updateCard(article);
+          headlineText.scrollIntoView({ behavior: 'smooth', block: 'center' });
         });
-        imagesContainer.appendChild(img)
 
       });
     })
