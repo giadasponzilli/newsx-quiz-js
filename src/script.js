@@ -238,7 +238,7 @@ function shareByEmail() {
   ////Added Read More button
   ////Scroll into view when an image is clicked
   //Privacy policy form make the button work
-  //Adjust all articles and pictures
+  //Adjust all pictures
   //Make sure it is responsive
   //Search AI
   //Deploy app
