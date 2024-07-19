@@ -235,6 +235,8 @@ function shareByEmail() {
 
   ////Follow Us icons on footer
   ////When reveal headline is press scroll to title
+  ////Added Read More button
+  ////Scroll into view when an image is clicked
   //Privacy policy form make the button work
   //Adjust all articles and pictures
   //Make sure it is responsive
