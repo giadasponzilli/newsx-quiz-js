@@ -12,6 +12,7 @@ module.exports = {
     },
     fontFamily: {
       serif: ['Times New Roman', 'Times', 'serif'],
+      roboto: ['Roboto', 'sans-serif'],
     },
   },
   variants: {

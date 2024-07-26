@@ -31,15 +31,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Iterate through each element in the json file and print a small image on the page as a menu
       articles.reverse().forEach((article, index) => {
-        const img = document.createElement("img");
+
+        const singleImgContainer = document.createElement('div');
+        singleImgContainer.classList.add('single-image-container-menu');
+
+        const img = document.createElement('img');
         img.src = article.image
         img.alt = article.title;
         img.dataset.id = article.id;
-        img.classList.add('w-auto', 'h-24', 'mt-12','rounded', 'shadow-md');
-        imagesContainer.appendChild(img)
+        singleImgContainer.appendChild(img);
+        imagesContainer.appendChild(singleImgContainer)
 
         //Add event listener for each image, so that when an image is clicked the previous card disappear and the one which has been clicked will be shown.
-        img.addEventListener("click", () => { 
+        img.addEventListener('click', () => { 
           currentArticleIndex = index;
           updateCard(article);
           headlineText.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -237,6 +241,8 @@ function shareByEmail() {
   ////When reveal headline is press scroll to title
   ////Added Read More button
   ////Scroll into view when an image is clicked
+
+  //Make everything a bit smaller
   //Privacy policy form make the button work
   //Adjust all pictures
   //Make sure it is responsive
