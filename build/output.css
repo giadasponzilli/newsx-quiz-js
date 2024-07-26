@@ -1262,12 +1262,12 @@ select {
   text-align: center;
 }
 
-.font-serif {
-  font-family: Times New Roman, Times, serif;
+.font-open-sans {
+  font-family: "Open Sans", sans-serif;
 }
 
-.font-roboto {
-  font-family: Roboto, sans-serif;
+.font-serif {
+  font-family: Times New Roman, Times, serif;
 }
 
 .text-2xl {
@@ -1302,6 +1302,10 @@ select {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-extra-bold {
+  font-weight: 900;
 }
 
 .font-medium {

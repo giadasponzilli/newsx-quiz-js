@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
       headlineText.classList.add('text-gray-900')
       const subHeading = document.createElement("h3")
       subHeading.textContent = currentArticle.subheading;
-      subHeading.classList.add("flex", "justify-center", "text-2xl", "m-10", "font-serif");
+      subHeading.classList.add("flex", "justify-center", "text-2xl", "m-10");
       subHeading.id = "subHeading";
       headlineText.insertAdjacentElement("afterend", subHeading);
       revealHeadlineButton.textContent = "Hide Headline"

@@ -12,7 +12,12 @@ module.exports = {
     },
     fontFamily: {
       serif: ['Times New Roman', 'Times', 'serif'],
+      oswald: ['Oswald', 'sans-serif'],
+      'open-sans': ['"Open Sans"', 'sans-serif'],
       roboto: ['Roboto', 'sans-serif'],
+    },
+    fontWeight: {
+      'extra-bold': 900,
     },
   },
   variants: {
