@@ -1,26 +1,26 @@
 document.addEventListener("DOMContentLoaded", () => {
-  
+
   //When hamburger icon is clicked navlinks show up
   const hamburger = document.getElementById("hamburger");
   const navLinks = document.getElementById("nav-links");
-  
-  hamburger.addEventListener("click", function() {
+
+  hamburger.addEventListener("click", function () {
     navLinks.classList.toggle("hidden");
   });
 
   // Variable to store the currently displayed article
-  let currentArticle = null; 
+  let currentArticle = null;
   // Variable to store the index of the currently displayed article
-  let currentArticleIndex = 0; 
+  let currentArticleIndex = 0;
   // Variable to store the articles data
-  let articles = []; 
+  let articles = [];
 
   fetch("./articles.json")
     .then(response => response.json())
     .then(data => {
       articles = data;
       console.log(articles);
-      
+
 
       const imagesContainer = document.getElementById("imagesContainer");
 
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
         imagesContainer.appendChild(singleImgContainer)
 
         //Add event listener for each image, so that when an image is clicked the previous card disappear and the one which has been clicked will be shown.
-        img.addEventListener('click', () => { 
+        img.addEventListener('click', () => {
           currentArticleIndex = index;
           updateCard(article);
           headlineText.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Event listener for read more button
     readMoreButton.addEventListener("click", () => {
-        pTextCard.textContent = article.content;  
+      pTextCard.textContent = article.content;
     });
 
     const pAuthorTextCard = document.createElement("p");
@@ -137,9 +137,9 @@ document.addEventListener("DOMContentLoaded", () => {
       revealHeadlineButton.textContent = "Hide Headline"
       headlineVisible = true; // Update visibility state
 
-       // Scroll to the headline only on small screens
+      // Scroll to the headline only on small screens
       // if (window.innerWidth < 1024) {
-        headlineText.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      headlineText.scrollIntoView({ behavior: 'smooth', block: 'center' });
       // }
 
     } else {
@@ -230,21 +230,21 @@ function shareByEmail() {
 
 
 
-  ////Make sure h3 can be visible on the page (problem in javascript)
-  ////Add footer
-  ////Style the navBar buttons in a different way
-  //Social media buttons make sure they work
-  //Connect form to email JS - need email from newsX
-  ////Hamburger menu for responsive app
+////Make sure h3 can be visible on the page (problem in javascript)
+////Add footer
+////Style the navBar buttons in a different way
+//Social media buttons make sure they work
+//Connect form to email JS - need email from newsX
+////Hamburger menu for responsive app
 
-  ////Follow Us icons on footer
-  ////When reveal headline is press scroll to title
-  ////Added Read More button
-  ////Scroll into view when an image is clicked
+////Follow Us icons on footer
+////When reveal headline is press scroll to title
+////Added Read More button
+////Scroll into view when an image is clicked
 
-  //Make everything a bit smaller
-  //Privacy policy form make the button work
-  //Adjust all pictures
-  //Make sure it is responsive
-  //Search AI
-  //Deploy app
+//Make everything a bit smaller
+//Privacy policy form make the button work
+//Adjust all pictures
+//Make sure it is responsive
+//Search AI
+//Deploy app
