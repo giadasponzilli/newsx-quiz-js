@@ -241,10 +241,10 @@ function shareByEmail() {
 ////When reveal headline is press scroll to title
 ////Added Read More button
 ////Scroll into view when an image is clicked
+////Adjust all pictures
 
 //Make everything a bit smaller
 //Privacy policy form make the button work
-//Adjust all pictures
 //Make sure it is responsive
 //Search AI
 //Deploy app
