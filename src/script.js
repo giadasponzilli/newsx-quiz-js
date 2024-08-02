@@ -132,11 +132,30 @@ document.addEventListener("DOMContentLoaded", () => {
       headlineText.classList.add('text-gray-900')
       const subHeading = document.createElement("h3")
       subHeading.textContent = currentArticle.subheading;
-      subHeading.classList.add("flex", "justify-center", "text-2xl", "m-10");
+      subHeading.classList.add("flex", "justify-center", "mt-4", "mb-10", "mx-10");
+      
+      // Add responsiveness to subHeading text dimension
+      function applyResponsiveClassSubHeading() {
+        if (window.innerWidth >= 768) {
+          // Apply lg class on small screens and up
+          subHeading.classList.add('text-2xl');
+          subHeading.classList.remove('text-sm');
+        } else {
+          // Apply default class on smaller screens
+          subHeading.classList.add('text-sm');
+          subHeading.classList.remove('text-2xl');
+        }
+      }
+      // Apply responsive classes on page load
+      applyResponsiveClassSubHeading();
+      // Update on window resize
+      window.addEventListener('resize', applyResponsiveClassSubHeading);
+      
       subHeading.id = "subHeading";
       headlineText.insertAdjacentElement("afterend", subHeading);
       revealHeadlineButton.textContent = "Hide Headline"
       headlineVisible = true; // Update visibility state
+
 
       // Scroll to the headline only on small screens
       // if (window.innerWidth < 1024) {
@@ -208,7 +227,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
-
   })
 });
 
@@ -271,6 +289,6 @@ function shareByEmail() {
 
 //Add favicon
 //Make everything a bit smaller
-//Make sure it is responsive
+//Make sure it is responsive - almost done - last thing is headline
 //Search AI
 //Deploy app
