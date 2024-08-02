@@ -245,9 +245,10 @@ function shareOnPinterest() {
 }
 
 function shareByEmail() {
+  const recipient = 'queries@newsx.media'
   const subject = document.title; // Use the page title as the subject
   const body = `Check out this link: ${window.location.href}`;
-  const mailtoUrl = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   window.location.href = mailtoUrl;
 }
 
