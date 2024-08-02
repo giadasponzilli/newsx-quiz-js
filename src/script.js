@@ -257,7 +257,7 @@ function shareByEmail() {
 ////Add footer
 ////Style the navBar buttons in a different way
 //Social media buttons make sure they work
-//Connect form to email JS - need email from newsX
+//Connect form to email JS - need email from newsX, make sure that policy is clicked before sending email and all field are completed
 ////Hamburger menu for responsive app
 
 ////Follow Us icons on footer
@@ -265,9 +265,10 @@ function shareByEmail() {
 ////Added Read More button
 ////Scroll into view when an image is clicked
 ////Adjust all pictures
+////Privacy policy form make the button work
 
+//Add favicon
 //Make everything a bit smaller
-//Privacy policy form make the button work
 //Make sure it is responsive
 //Search AI
 //Deploy app
