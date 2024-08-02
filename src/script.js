@@ -186,6 +186,29 @@ document.addEventListener("DOMContentLoaded", () => {
   const buttonArrowLeft = document.getElementById("buttonArrowLeft");
   buttonArrowLeft.addEventListener("click", previousArticle)
 
+  const buttonPolicy = document.getElementById("buttonPolicy");
+  const switchThumb = document.getElementById('switchingPolicy');
+
+  buttonPolicy.addEventListener('click', function(){
+    const isChecked = buttonPolicy.getAttribute('aria-checked') === 'true';
+
+    if (isChecked) {
+      buttonPolicy.setAttribute('aria-checked', 'false');
+      buttonPolicy.classList.remove('bg-indigo-600');
+      buttonPolicy.classList.add('bg-gray-200');
+      switchThumb.classList.remove('translate-x-3.5');
+      switchThumb.classList.add('translate-x-0');
+    } else {
+      buttonPolicy.setAttribute('aria-checked', 'true');
+      buttonPolicy.classList.remove('bg-gray-200');
+      buttonPolicy.classList.add('bg-indigo-600');
+      switchThumb.classList.remove('translate-x-0');
+      switchThumb.classList.add('translate-x-3.5');
+
+    }
+
+
+  })
 });
 
 
