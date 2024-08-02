@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const img = document.createElement('img');
         img.src = article.image
-        img.alt = article.title;
+        img.alt = article.altTextImg;
         img.dataset.id = article.id;
         singleImgContainer.appendChild(img);
         imagesContainer.appendChild(singleImgContainer)
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const pTextCard = document.createElement("p");
     pTextCard.textContent = truncatedContent;
-    pTextCard.classList.add('p-8', 'text-xl');
+    pTextCard.classList.add('text-xl');
     textContainer.appendChild(pTextCard);
 
     // Add read more button
@@ -98,7 +98,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const pAuthorTextCard = document.createElement("p");
     pAuthorTextCard.textContent = article.author
-    pAuthorTextCard.classList.add('font-bold', 'p-8', 'text-xl');
+    pAuthorTextCard.classList.add('font-bold', 'text-xl');
+    pAuthorTextCard.style.paddingTop = '20px';
     textContainer.appendChild(pAuthorTextCard);
 
 

@@ -85,14 +85,16 @@
       <!-- Article Card Section -->
       <div class="p-1 rounded-xl bg-white bg-opacity-50 shadow-xl hover:rounded-2xl">
         <div id="headlineSection">
-          <h2 class="flex justify-center text-6xl font-open-sans font-extra-bold text-gray-800 m-10" id="headline">???
+          <h2 class="flex justify-center items-center text-6xl font-open-sans font-extra-bold text-gray-800 m-10" id="headline">???
           </h2>
         </div>
-        <div class="flex justify-center space-x-6 m-4">
+        <div class="flex flex-col lg:flex-row justify-center space-y-6 lg:space-y-0 lg:space-x-6 m-4">
           <div class="flex justify-center items-center" id="imgCardContainer">
+            <!-- Image or content here -->
           </div>
-          <div class="sm:w-7/12 pl-0 p-5">
+          <div class="lg:w-7/12 md:p-8 p-0 ">
             <div class="space-y-2" id="textContainer">
+              <!-- Text or content here -->
             </div>
           </div>
         </div>
@@ -125,25 +127,25 @@
     </div>
 
     <!-- Social Media Buttons -->
-    <div class="flex justify-center space-x-4 mt-24">
+    <div class="flex flex-wrap justify-center space-x-4 mt-24">
       <button onclick="shareOnFacebook()"
-        class="bg-gray-900 text-white p-6 rounded-lg hover:bg-custom-color-purple-hover">
-        <i class="fa-brands fa-facebook fa-2xl"></i>
+        class="bg-gray-900 text-white p-2 md:p-6 rounded-lg hover:bg-custom-color-purple-hover">
+        <i class="fa-brands fa-facebook fa-xl md:fa-xl"></i>
       </button>
       <button onclick="shareOnTwitter()"
-        class="bg-gray-900 text-white p-6 rounded-lg hover:bg-custom-color-purple-hover">
-        <i class="fa-brands fa-x-twitter fa-2xl"></i>
+        class="bg-gray-900 text-white p-2 md:p-6 rounded-lg hover:bg-custom-color-purple-hover">
+        <i class="fa-brands fa-x-twitter fa-xl md:fa-xl"></i>
       </button>
       <button onclick="shareOnLinkedIn()"
-        class="bg-gray-900 text-white p-6 rounded-lg hover:bg-custom-color-purple-hover">
-        <i class="fa-brands fa-linkedin fa-2xl"></i>
+        class="bg-gray-900 text-white p-2 md:p-6 rounded-lg hover:bg-custom-color-purple-hover">
+        <i class="fa-brands fa-linkedin fa-xl md:fa-xl"></i>
       </button>
       <button onclick="shareOnPinterest()"
-        class="bg-gray-900 text-white p-6 rounded-lg hover:bg-custom-color-purple-hover">
-        <i class="fa-brands fa-pinterest fa-2xl"></i>
+        class="bg-gray-900 text-white p-2 md:p-6 rounded-lg hover:bg-custom-color-purple-hover">
+        <i class="fa-brands fa-pinterest fa-xl md:fa-xl"></i>
       </button>
-      <button onclick="shareByEmail()" class="bg-gray-900 text-white p-6 rounded-lg hover:bg-custom-color-purple-hover">
-        <i class="fa-regular fa-envelope fa-2xl"></i>
+      <button onclick="shareByEmail()" class="bg-gray-900 text-white p-2 md:p-6 rounded-lg hover:bg-custom-color-purple-hover">
+        <i class="fa-regular fa-envelope fa-xl md:fa-xl"></i>
       </button>
     </div>
 

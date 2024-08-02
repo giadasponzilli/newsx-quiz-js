@@ -29,7 +29,7 @@ p {
 
 
 #imgCardContainer {
-  width: 400px;  
+  /* width: 400px;   */
   height: auto; 
   overflow: hidden;
   position: relative;
