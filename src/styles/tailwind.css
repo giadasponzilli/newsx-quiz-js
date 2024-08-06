@@ -62,5 +62,10 @@ p {
   margin-right: 40rem;
 }
 
-
-
+/* Medium screens (tablets, 768px and below) */
+@media (max-width: 768px) {
+  img {
+    width: 70%;
+    height: 70%
+  }
+}

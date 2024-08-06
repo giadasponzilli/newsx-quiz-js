@@ -813,10 +813,6 @@ select {
   right: 0px;
 }
 
-.m-10 {
-  margin: 2.5rem;
-}
-
 .m-12 {
   margin: 3rem;
 }
@@ -848,9 +844,8 @@ select {
   margin-bottom: 8rem;
 }
 
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .mb-12 {
@@ -885,6 +880,10 @@ select {
   margin-top: 6rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mt-56 {
   margin-top: 14rem;
 }
@@ -899,14 +898,6 @@ select {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
 }
 
 .block {
@@ -1268,11 +1259,6 @@ select {
   font-family: Times New Roman, Times, serif;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1293,14 +1279,14 @@ select {
   line-height: 1.75rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -1468,6 +1454,15 @@ p {
 #formContainer {
   margin-left: 40rem;
   margin-right: 40rem;
+}
+
+/* Medium screens (tablets, 768px and below) */
+
+@media (max-width: 768px) {
+  img {
+    width: 70%;
+    height: 70%
+  }
 }
 
 .placeholder\:text-gray-400::-moz-placeholder {
@@ -1712,6 +1707,3 @@ p {
     padding-right: 1.5rem;
   }
 }
-
-
-
