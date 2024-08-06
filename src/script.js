@@ -76,8 +76,15 @@ document.addEventListener("DOMContentLoaded", () => {
     //Update Text Card
     const textContainer = document.getElementById("textContainer");
     textContainer.innerHTML = "";
+    
+    let maxLength;
 
-    const maxLength = 1000; // Character limit
+    if (window.innerWidth >= 768) {
+      maxLength = 1000; // Character limit
+    } else {
+      maxLength = 400; // Character limit
+    } 
+
     const truncatedContent = truncateContent(article.content, maxLength);
 
     const pTextCard = document.createElement("p");
@@ -138,12 +145,12 @@ document.addEventListener("DOMContentLoaded", () => {
       function applyResponsiveClassSubHeading() {
         if (window.innerWidth >= 768) {
           // Apply lg class on small screens and up
-          subHeading.classList.add('text-2xl');
+          subHeading.classList.add('text-lg');
           subHeading.classList.remove('text-sm');
         } else {
           // Apply default class on smaller screens
           subHeading.classList.add('text-sm');
-          subHeading.classList.remove('text-2xl');
+          subHeading.classList.remove('text-lg');
         }
       }
       // Apply responsive classes on page load
@@ -289,6 +296,6 @@ function shareByEmail() {
 
 //Add favicon
 //Make everything a bit smaller
-//Make sure it is responsive - almost done - last thing is headline
+//Make sure it is responsive - read more and smaller picture
 //Search AI
 //Deploy app
