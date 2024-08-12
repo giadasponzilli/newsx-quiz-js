@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (window.innerWidth >= 768) {
       maxLength = 1000; // Character limit
     } else {
-      maxLength = 400; // Character limit
+      maxLength = 200; // Character limit
     } 
 
     const truncatedContent = truncateContent(article.content, maxLength);
@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!headlineVisible) {
       headlineText.textContent = currentArticle.headline;
-      headlineText.classList.add('text-gray-900')
+      headlineText.classList.add('text-gray-900', 'text-xl')
       const subHeading = document.createElement("h3")
       subHeading.textContent = currentArticle.subheading;
       subHeading.classList.add("flex", "justify-center", "mt-4", "mb-10", "mx-10");
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
       function applyResponsiveClassSubHeading() {
         if (window.innerWidth >= 768) {
           // Apply lg class on small screens and up
-          subHeading.classList.add('text-lg');
+          subHeading.classList.add('text-4xl');
           subHeading.classList.remove('text-sm');
         } else {
           // Apply default class on smaller screens
@@ -283,8 +283,6 @@ function shareByEmail() {
 ////Make sure h3 can be visible on the page (problem in javascript)
 ////Add footer
 ////Style the navBar buttons in a different way
-//Social media buttons make sure they work
-//Connect form to email JS - need email from newsX, make sure that policy is clicked before sending email and all field are completed
 ////Hamburger menu for responsive app
 
 ////Follow Us icons on footer
@@ -293,9 +291,10 @@ function shareByEmail() {
 ////Scroll into view when an image is clicked
 ////Adjust all pictures
 ////Privacy policy form make the button work
-
+////Make everything a bit smaller
+////Make sure it is responsive
+////Search AI
 //Add favicon
-//Make everything a bit smaller
-//Make sure it is responsive - read more and smaller picture
-//Search AI
-//Deploy app
+//Deploy app - Vercel
+//Social media buttons make sure they work
+//Connect form to email JS - need email from newsX, make sure that policy is clicked before sending email and all field are completed
