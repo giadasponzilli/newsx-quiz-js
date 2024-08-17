@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Variable to store the articles data
   let articles = [];
 
-  fetch("./articles.json")
+  fetch("../articles.json")
     .then(response => response.json())
     .then(data => {
       articles = data;
@@ -145,12 +145,12 @@ document.addEventListener("DOMContentLoaded", () => {
       function applyResponsiveClassSubHeading() {
         if (window.innerWidth >= 768) {
           // Apply lg class on small screens and up
-          subHeading.classList.add('text-4xl');
+          subHeading.classList.add('text-2xl');
           subHeading.classList.remove('text-sm');
         } else {
           // Apply default class on smaller screens
           subHeading.classList.add('text-sm');
-          subHeading.classList.remove('text-lg');
+          subHeading.classList.remove('text-2xl');
         }
       }
       // Apply responsive classes on page load
