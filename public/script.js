@@ -1,5 +1,3 @@
-console.log('Hello, world!')
-
 document.addEventListener("DOMContentLoaded", () => {
 
   //When hamburger icon is clicked navlinks show up
@@ -17,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Variable to store the articles data
   let articles = [];
 
-  fetch("/articles.json")
+  fetch("/data/articles.json")
     .then(response => response.json())
     .then(data => {
       articles = data;
@@ -147,12 +145,12 @@ document.addEventListener("DOMContentLoaded", () => {
       function applyResponsiveClassSubHeading() {
         if (window.innerWidth >= 768) {
           // Apply lg class on small screens and up
-          subHeading.classList.add('text-2xl');
+          subHeading.classList.add('text-4xl');
           subHeading.classList.remove('text-sm');
         } else {
           // Apply default class on smaller screens
           subHeading.classList.add('text-sm');
-          subHeading.classList.remove('text-2xl');
+          subHeading.classList.remove('text-4xl');
         }
       }
       // Apply responsive classes on page load
@@ -282,21 +280,6 @@ function shareByEmail() {
 
 
 
-////Make sure h3 can be visible on the page (problem in javascript)
-////Add footer
-////Style the navBar buttons in a different way
-////Hamburger menu for responsive app
-
-////Follow Us icons on footer
-////When reveal headline is press scroll to title
-////Added Read More button
-////Scroll into view when an image is clicked
-////Adjust all pictures
-////Privacy policy form make the button work
-////Make everything a bit smaller
-////Make sure it is responsive
-////Search AI
 //Add favicon
-//Deploy app - Vercel
 //Social media buttons make sure they work
 //Connect form to email JS - need email from newsX, make sure that policy is clicked before sending email and all field are completed
