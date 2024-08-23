@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Variable to store the articles data
   let articles = [];
 
-  fetch("./data/articles.json")
+  fetch("/articles.json")
     .then(response => response.json())
     .then(data => {
       articles = data;
