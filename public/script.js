@@ -136,8 +136,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!headlineVisible) {
       headlineText.textContent = currentArticle.headline;
-      headlineText.classList.add('text-gray-900', 'text-xl')
-      const subHeading = document.createElement("h3")
+      headlineText.classList.add('text-gray-900')
+      const subHeading = document.createElement("h2")
       subHeading.textContent = currentArticle.subheading;
       subHeading.classList.add("flex", "justify-center", "mt-4", "mb-10", "mx-10");
       
