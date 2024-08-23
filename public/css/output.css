@@ -1906,6 +1906,11 @@ p {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 1280px) {
