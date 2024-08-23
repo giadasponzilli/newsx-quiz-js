@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
           subHeading.classList.add('text-sm');
           subHeading.classList.remove('text-4xl', 'text-2xl');
-          console.log('Applied text-sm');
+          console.log('Applied text-sm'); 
         }
       }
       // Apply responsive classes on page load
