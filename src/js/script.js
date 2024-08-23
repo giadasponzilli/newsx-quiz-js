@@ -1,3 +1,5 @@
+console.log('Hello, world!')
+
 document.addEventListener("DOMContentLoaded", () => {
 
   //When hamburger icon is clicked navlinks show up
