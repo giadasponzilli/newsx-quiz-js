@@ -143,14 +143,18 @@ document.addEventListener("DOMContentLoaded", () => {
       
       // Add responsiveness to subHeading text dimension
       function applyResponsiveClassSubHeading() {
-        if (window.innerWidth >= 768) {
-          // Apply lg class on small screens and up
+        if (window.innerWidth >= 1024) {
+          // Apply text-4xl for large screens and up
           subHeading.classList.add('text-4xl');
-          subHeading.classList.remove('text-sm');
+          subHeading.classList.remove('text-2xl', 'text-sm');
+        } else if (window.innerWidth >= 768) {
+          // Apply text-2xl for medium screens
+          subHeading.classList.add('text-2xl');
+          subHeading.classList.remove('text-4xl', 'text-sm');
         } else {
-          // Apply default class on smaller screens
+          // Apply text-sm for smaller screens
           subHeading.classList.add('text-sm');
-          subHeading.classList.remove('text-4xl');
+          subHeading.classList.remove('text-4xl', 'text-2xl');
         }
       }
       // Apply responsive classes on page load
