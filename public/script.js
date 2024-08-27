@@ -284,3 +284,4 @@ function shareByEmail() {
 //Add favicon
 //Social media buttons make sure they work
 //Connect form to email JS - need email from newsX, make sure that policy is clicked before sending email and all field are completed
+//try
