@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
         img.alt = article.altTextImg;
         img.dataset.id = article.id;
         singleImgContainer.appendChild(img);
+        img.style.cursor = 'pointer';
         imagesContainer.appendChild(singleImgContainer)
 
         //Add event listener for each image, so that when an image is clicked the previous card disappear and the one which has been clicked will be shown.
@@ -143,15 +144,12 @@ document.addEventListener("DOMContentLoaded", () => {
       
       // Add responsiveness to subHeading text dimension
       function applyResponsiveClassSubHeading() {
-        if (window.innerWidth >= 1024) {
-          subHeading.classList.add('text-4xl');
-          subHeading.classList.remove('text-2xl', 'text-sm');
-        } else if (window.innerWidth >= 768) {
+        if (window.innerWidth >= 768) {
           subHeading.classList.add('text-2xl');
-          subHeading.classList.remove('text-4xl', 'text-sm');
+          subHeading.classList.remove('text-sm');
         } else {
           subHeading.classList.add('text-sm');
-          subHeading.classList.remove('text-4xl', 'text-2xl');
+          subHeading.classList.remove('text-2xl');
         }
       }
       // Apply responsive classes on page load
@@ -278,10 +276,3 @@ function shareByEmail() {
   const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   window.location.href = mailtoUrl;
 }
-
-
-
-//Add favicon
-//Social media buttons make sure they work
-//Connect form to email JS - need email from newsX, make sure that policy is clicked before sending email and all field are completed
-//try
